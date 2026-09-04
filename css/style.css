@@ -64,6 +64,7 @@ body {
     max-width: 900px;
     position: relative;
     z-index: 2;
+    transform: translateY(40px);
 }
 
 .hero-eyebrow {
@@ -2428,6 +2429,16 @@ footer {
         line-height: 1.7;
     }
 
+}
+
+/* ========================================
+   Mobile video - Hero
+======================================== */
+@media (max-width: 768px) {
+    .hero-video {
+        object-fit: contain;
+        transform: scale(1.10);
+    }
 }
 
 
