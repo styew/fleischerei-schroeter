@@ -1,0 +1,2418 @@
+/* =========================
+   RESET
+   ========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0b0b0a;
+    color: #f2eee5;
+}
+
+
+/* =========================
+   HERO
+   ========================= */
+
+#hero {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    text-align: center;
+
+    padding: 2rem;
+
+    background-image: url("../assets/background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* =========================
+   HERO CONTENT
+   ========================= */
+
+.hero-content {
+    max-width: 900px;
+}
+
+.hero-eyebrow {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+
+    margin-bottom: 1.5rem;
+
+    color: #c9a45c;
+}
+
+.hero-content h1 {
+    font-size: clamp(3rem, 7vw, 6rem);
+    line-height: 1;
+    font-weight: 700;
+
+    margin-bottom: 1.5rem;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    margin-bottom: 2.5rem;
+}
+
+
+/* =========================
+   BUTTON
+   ========================= */
+
+.hero-button {
+    display: inline-block;
+
+    padding: 1rem 2rem;
+
+    color: #0b0b0a;
+    background-color: #c9a45c;
+
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+
+    transition: 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: #f2eee5;
+}
+
+/* =========================
+   HEADER
+   ========================= */
+
+header {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    z-index: 10;
+
+    background: rgba(43, 38, 16, 0.55);
+
+    border-bottom: 1px solid rgba(242, 238, 229, 0.12);
+
+    backdrop-filter: blur(6px);
+}
+
+nav {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 1.5rem 4rem;
+}
+
+.logo {
+    color: #f2eee5;
+
+    text-decoration: none;
+
+    font-size: 1.2rem;
+    font-weight: 700;
+
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.nav-links {
+    display: flex;
+
+    gap: 2.5rem;
+}
+
+.nav-links a {
+    color: #f2eee5;
+
+    text-decoration: none;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #c9a45c;
+}
+
+/* =========================
+   EVENTS
+   ========================= */
+
+#events {
+    padding: 8rem 4rem;
+
+    background-color: #f2eee5;
+    color: #0b0b0a;
+}
+
+
+/* =========================
+   SECTION HEADER
+   ========================= */
+
+.section-header {
+    max-width: 800px;
+
+    margin: 0 auto 5rem;
+
+    text-align: center;
+}
+
+.section-eyebrow {
+    margin-bottom: 1rem;
+
+    color: #a8843f;
+
+    font-size: 0.85rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+}
+
+.section-header h2 {
+    margin-bottom: 1.5rem;
+
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    line-height: 1;
+}
+
+.section-intro {
+    max-width: 600px;
+
+    margin: 0 auto;
+
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   EVENTS GRID
+   ========================= */
+
+.events-grid {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 2rem;
+}
+
+
+/* =========================
+   EVENT CARD
+   ========================= */
+
+.event-card {
+    min-height: 500px;
+
+    padding: 3rem;
+
+    display: flex;
+    align-items: center;
+
+    border: 1px solid rgba(11, 11, 10, 0.15);
+
+    background-color: #ebe6dc;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.event-content {
+    width: 100%;
+    text-align: center;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.event-link {
+    display: inline-flex;
+
+    align-items: center;
+    gap: 0.75rem;
+
+    margin-top: 2.5rem;
+
+    color: #0b0b0a;
+
+    text-decoration: none;
+
+    font-size: 0.85rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.event-link span {
+    font-size: 1.2rem;
+
+    transition: transform 0.3s ease;
+}
+
+.event-link:hover span {
+    transform: translateX(6px);
+}
+
+
+
+/* =========================
+   EVENT TITLE
+   ========================= */
+
+.event-card h3 {
+    margin-bottom: 1.5rem;
+
+    font-size: clamp(2rem, 3vw, 3rem);
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+
+/* =========================
+   EVENT TEXT
+   ========================= */
+
+.event-card p {
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.event-card p:not(.event-number) {
+    color: #4a4843;
+    line-height: 1.7;
+}
+
+/* =========================
+   LIVE BBQ – INTRO
+========================= */
+
+#live-bbq {
+    padding: 8rem 4rem;
+    background-color: #0b0b0a;
+    color: #f2eee5;
+}
+
+.live-bbq-intro {
+    max-width: 1300px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 6rem;
+
+    align-items: center;
+}
+
+/* TEXT */
+
+.live-bbq-text {
+    max-width: 500px;
+}
+
+.live-bbq-text h2 {
+    margin-bottom: 2rem;
+
+    font-size: clamp(3rem, 5vw, 5rem);
+    line-height: 0.95;
+}
+
+.live-bbq-description {
+    color: #c8c3b9;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+
+/* IMAGES */
+
+.live-bbq-images {
+    position: relative;
+    min-height: 600px;
+}
+
+.live-bbq-image {
+    position: absolute;
+    overflow: hidden;
+}
+
+.live-bbq-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* MAIN IMAGE */
+
+.main-image {
+    width: 75%;
+    height: 500px;
+
+    top: 0;
+    right: 0;
+}
+
+
+/* SECONDARY IMAGE */
+
+.secondary-image {
+    width: 45%;
+    height: 300px;
+
+    bottom: 0;
+    left: 0;
+
+    border: 8px solid #0b0b0a;
+}
+
+/* =========================
+   LIVE BBQ – ABLAUF
+========================= */
+
+.live-bbq-process {
+    max-width: 1300px;
+    margin: 8rem auto 0;
+}
+
+.process-header {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.process-header h2 {
+    font-size: clamp(2.5rem, 4vw, 4rem);
+    line-height: 1;
+}
+
+
+/* STEPS */
+
+.process-steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    position: relative;
+}
+
+
+/* HORIZONTAL LINE */
+
+.process-steps::before {
+    content: "";
+
+    position: absolute;
+
+    top: 22px;
+    left: 12%;
+    right: 12%;
+
+    height: 1px;
+
+    background-color: rgba(242, 238, 229, 0.25);
+}
+
+
+/* INDIVIDUAL STEP */
+
+.process-step {
+    position: relative;
+    text-align: center;
+    padding: 0 1.5rem;
+}
+
+
+/* NUMBER */
+
+.process-number {
+    width: 44px;
+    height: 44px;
+
+    margin: 0 auto 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    z-index: 1;
+
+    border: 1px solid #c9a45c;
+
+    background-color: #0b0b0a;
+
+    color: #c9a45c;
+
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+
+/* TITLE */
+
+.process-step h3 {
+    margin-bottom: 1rem;
+
+    font-size: 1.1rem;
+
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+
+/* DESCRIPTION */
+
+.process-step p {
+    color: #a9a49b;
+
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+/* =========================
+   LIVE BBQ – CTA
+========================= */
+
+.live-bbq-cta {
+    max-width: 800px;
+    margin: 6rem auto 0;
+    padding-top: 4rem;
+
+    text-align: center;
+
+    border-top: 1px solid rgba(242, 238, 229, 0.15);
+}
+
+.live-bbq-cta h2 {
+    margin-bottom: 1rem;
+
+    font-size: clamp(2.2rem, 4vw, 3.5rem);
+    line-height: 1;
+}
+
+.live-bbq-cta p:not(.section-eyebrow) {
+    max-width: 550px;
+    margin: 0 auto;
+
+    color: #c8c3b9;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+
+    margin-top: 2rem;
+    padding: 0.9rem 1.8rem;
+
+    background-color: #c9a45c;
+    color: #0b0b0a;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.8rem;
+    font-weight: 700;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.cta-button span {
+    font-size: 1.1rem;
+    transition: transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #f2eee5;
+    transform: translateY(-3px);
+}
+
+.cta-button:hover span {
+    transform: translateX(5px);
+}
+
+/* =========================
+   BBQ-BUFFET – INTRO
+========================= */
+
+#bbq-buffet {
+    padding: 8rem 4rem;
+    background-color: #f2eee5;
+    color: #0b0b0a;
+}
+
+.bbq-buffet-intro {
+    max-width: 1300px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 6rem;
+
+    align-items: center;
+}
+
+
+/* IMAGES */
+
+.bbq-buffet-images {
+    position: relative;
+    min-height: 600px;
+}
+
+.bbq-buffet-image {
+    position: absolute;
+    overflow: hidden;
+}
+
+.bbq-buffet-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* MAIN IMAGE */
+
+.bbq-buffet-image.main-image {
+    width: 75%;
+    height: 500px;
+
+    top: 0;
+    left: 0;
+}
+
+
+/* SECONDARY IMAGE */
+
+.bbq-buffet-image.secondary-image {
+    width: 45%;
+    height: 300px;
+
+    bottom: 0;
+    right: 0;
+
+    border: 8px solid #f2eee5;
+}
+
+
+/* TEXT */
+
+.bbq-buffet-text {
+    max-width: 500px;
+}
+
+.bbq-buffet-text h2 {
+    margin-bottom: 2rem;
+
+    font-size: clamp(3rem, 5vw, 5rem);
+    line-height: 0.95;
+}
+
+.bbq-buffet-description {
+    color: #4a4843;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* =========================
+   ABLAUF / PROCESS
+========================= */
+
+.process-header {
+    max-width: 800px;
+    margin: 8rem auto 5rem;
+
+    text-align: center;
+}
+
+.process-header h2 {
+    font-size: clamp(2.2rem, 4vw, 3.5rem);
+    line-height: 1;
+}
+
+
+/* STEPS */
+
+.process-steps {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    position: relative;
+}
+
+
+/* LINE */
+
+.process-steps::before {
+    content: "";
+
+    position: absolute;
+
+    top: 18px;
+    left: 8%;
+    right: 8%;
+
+    height: 1px;
+
+    background-color: currentColor;
+
+    opacity: 0.2;
+}
+
+
+/* STEP */
+
+.process-step {
+    position: relative;
+
+    padding: 0 1.5rem;
+
+    text-align: center;
+}
+
+.process-number {
+    width: 36px;
+    height: 36px;
+
+    margin: 0 auto 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    z-index: 1;
+
+    border: 1px solid currentColor;
+
+    background-color: inherit;
+
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.process-step h3 {
+    margin-bottom: 1rem;
+
+    font-size: 1.1rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.process-step p {
+    color: inherit;
+    opacity: 0.65;
+
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* =========================
+   BBQ-BUFFET – CTA
+========================= */
+
+.bbq-buffet-cta {
+    max-width: 800px;
+    margin: 6rem auto 0;
+    padding-top: 4rem;
+
+    text-align: center;
+
+    border-top: 1px solid rgba(11, 11, 10, 0.15);
+}
+
+.bbq-buffet-cta h2 {
+    margin-bottom: 1rem;
+
+    font-size: clamp(2.2rem, 4vw, 3.5rem);
+    line-height: 1;
+}
+
+.bbq-buffet-cta p:not(.section-eyebrow) {
+    max-width: 550px;
+    margin: 0 auto;
+
+    color: #4a4843;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.bbq-buffet-cta .cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+
+    margin-top: 2rem;
+    padding: 0.9rem 1.8rem;
+
+    background-color: #0b0b0a;
+    color: #f2eee5;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.8rem;
+    font-weight: 700;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.bbq-buffet-cta .cta-button span {
+    font-size: 1.1rem;
+
+    transition: transform 0.3s ease;
+}
+
+.bbq-buffet-cta .cta-button:hover {
+    background-color: #c9a45c;
+    color: #0b0b0a;
+
+    transform: translateY(-3px);
+}
+
+.bbq-buffet-cta .cta-button:hover span {
+    transform: translateX(5px);
+}
+
+/* =========================
+   ÜBER UNS
+========================= */
+
+#about {
+    padding: 9rem 4rem;
+    background-color: #0b0b0a;
+    color: #f2eee5;
+}
+
+.about-container {
+    max-width: 1300px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 7rem;
+
+    align-items: center;
+}
+
+
+/* IMAGE */
+
+.about-image {
+    height: 650px;
+    overflow: hidden;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* CONTENT */
+
+.about-content {
+    max-width: 650px;
+}
+
+.about-content h2 {
+    margin-bottom: 3rem;
+
+    font-size: clamp(3rem, 5vw, 5rem);
+    line-height: 0.95;
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+.about-text p {
+    margin-bottom: 1.5rem;
+
+    color: #c8c3b9;
+
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.about-text p:last-child {
+    margin-bottom: 0;
+}
+
+/* =========================
+   FAQ
+========================= */
+
+#faq {
+    padding: 9rem 4rem;
+    background-color: #f2eee5;
+    color: #0b0b0a;
+}
+
+.faq-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.faq-header {
+    max-width: 700px;
+    margin: 0 auto 5rem;
+    text-align: center;
+}
+
+.faq-header h2 {
+    margin-bottom: 1.5rem;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    line-height: 1;
+}
+
+.faq-header > p:last-child {
+    color: #4a4843;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+
+/* FAQ list */
+
+.faq-list {
+    border-top: 1px solid rgba(11, 11, 10, 0.2);
+}
+
+.faq-item {
+    border-bottom: 1px solid rgba(11, 11, 10, 0.2);
+}
+
+
+/* Question */
+
+.faq-item summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 2rem;
+    padding: 1.8rem 0;
+
+    cursor: pointer;
+
+    font-size: 1.05rem;
+    font-weight: 700;
+    line-height: 1.4;
+
+    list-style: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+
+/* Plus */
+
+.faq-item summary span {
+    flex-shrink: 0;
+
+    font-size: 1.6rem;
+    font-weight: 300;
+
+    color: #a8843f;
+
+    transition: transform 0.3s ease;
+}
+
+
+/* Answer */
+
+.faq-item p {
+    max-width: 800px;
+    margin: 0 0 1.5rem;
+
+    color: #4a4843;
+
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.faq-item p:last-child {
+    margin-bottom: 2rem;
+}
+
+
+/* Open state */
+
+.faq-item[open] summary span {
+    transform: rotate(45deg);
+}
+
+.faq-item[open] summary {
+    color: #a8843f;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+#contact {
+    padding: 9rem 4rem;
+    background-color: #0b0b0a;
+    color: #f2eee5;
+}
+
+.contact-container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   CONTACT HEADER
+========================= */
+
+.contact-header {
+    max-width: 750px;
+    margin: 0 auto 5rem;
+    text-align: center;
+}
+
+.contact-header h2 {
+    margin-bottom: 1.5rem;
+    font-size: clamp(2.8rem, 5vw, 4.5rem);
+    line-height: 1;
+}
+
+.contact-header > p:last-child {
+    max-width: 600px;
+    margin: 0 auto;
+
+    color: #c8c3b9;
+
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   CONTACT OPTIONS
+========================= */
+
+.contact-options {
+    max-width: 1000px;
+    margin: 0 auto 9rem;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    background-color: #f2eee5;
+    color: #0b0b0a;
+
+    border: 1px solid #f2eee5;
+}
+
+.contact-option {
+    display: flex;
+    align-items: center;
+
+    gap: 1.2rem;
+    padding: 2rem;
+
+    color: #0b0b0a;
+    text-decoration: none;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+.contact-option + .contact-option {
+    border-left: 1px solid rgba(11, 11, 10, 0.15);
+}
+
+.contact-option:hover {
+    background-color: #ebe6dc;
+    color: #a8843f;
+}
+
+
+/* Contact icons */
+
+.contact-icon {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border: 1px solid #a8843f;
+
+    color: #a8843f;
+
+    font-size: 1.1rem;
+}
+
+
+/* Contact text */
+
+.contact-label {
+    display: block;
+
+    margin-bottom: 0.3rem;
+
+    color: #6b675f;
+
+    font-size: 0.7rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+}
+
+.contact-value {
+    display: block;
+
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+
+/* =========================
+   LOCATIONS HEADER
+========================= */
+
+.locations-header {
+    max-width: 750px;
+    margin: 0 auto 4rem;
+
+    text-align: center;
+}
+
+.locations-header h2 {
+    font-size: clamp(2.2rem, 4vw, 3.5rem);
+    line-height: 1;
+}
+
+
+/* =========================
+   LOCATIONS GRID
+========================= */
+
+.locations-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 2rem;
+}
+
+
+/* =========================
+   LOCATION CARD
+========================= */
+
+.location-card {
+    overflow: hidden;
+
+    background-color: #f2eee5;
+    color: #0b0b0a;
+
+    border: 1px solid #f2eee5;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.location-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+
+/* =========================
+   LOCATION IMAGE
+========================= */
+
+.location-image {
+    width: 100%;
+    height: 350px;
+
+    overflow: hidden;
+}
+
+.location-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+.location-card:hover .location-image img {
+    transform: scale(1.03);
+}
+
+
+/* =========================
+   LOCATION CONTENT
+========================= */
+
+.location-content {
+    padding: 2.5rem;
+}
+
+.location-type {
+    margin-bottom: 0.75rem;
+
+    color: #a8843f;
+
+    font-size: 0.75rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+.location-content h3 {
+    margin-bottom: 2rem;
+
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    line-height: 1;
+}
+
+.location-address {
+    margin-bottom: 2.5rem;
+}
+
+.location-address p {
+    color: #4a4843;
+
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   OPENING HOURS
+========================= */
+
+.opening-hours {
+    padding-top: 2rem;
+
+    border-top: 1px solid rgba(11, 11, 10, 0.15);
+}
+
+.opening-hours h4 {
+    margin-bottom: 1.5rem;
+
+    color: #0b0b0a;
+
+    font-size: 0.75rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+}
+
+.opening-hours p {
+    margin-bottom: 1rem;
+
+    color: #4a4843;
+
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.opening-hours p:last-child {
+    margin-bottom: 0;
+}
+
+.opening-hours strong {
+    color: #0b0b0a;
+}
+
+
+/* =========================
+   PICKUP NOTE
+========================= */
+
+.pickup-note {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+
+    border-top: 1px solid rgba(168, 132, 63, 0.25);
+
+    color: #a8843f !important;
+
+    font-weight: 600;
+}
+
+
+/* =========================
+   MAP LINK
+========================= */
+
+.location-link {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 0.75rem;
+
+    margin-top: 2.5rem;
+
+    color: #0b0b0a;
+
+    text-decoration: none;
+
+    font-size: 0.8rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+
+    transition: color 0.3s ease;
+}
+
+.location-link span {
+    font-size: 1.1rem;
+
+    transition: transform 0.3s ease;
+}
+
+.location-link:hover {
+    color: #a8843f;
+}
+
+.location-link:hover span {
+    transform: translateX(5px);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 5rem 4rem 2rem;
+
+    background-color: #070706;
+    color: #f2eee5;
+
+    border-top: 1px solid rgba(242, 238, 229, 0.1);
+}
+
+.footer-container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   FOOTER MAIN
+========================= */
+
+.footer-main {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+
+    gap: 5rem;
+
+    padding-bottom: 5rem;
+}
+
+
+/* =========================
+   FOOTER BRAND
+========================= */
+
+.footer-brand {
+    max-width: 400px;
+}
+
+.footer-logo {
+    display: inline-block;
+
+    margin-bottom: 1.5rem;
+
+    color: #f2eee5;
+
+    text-decoration: none;
+
+    font-size: 1.3rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.footer-brand p {
+    max-width: 350px;
+
+    color: #8f8a80;
+
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   FOOTER COLUMNS
+========================= */
+
+.footer-navigation,
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+}
+
+.footer-navigation h3,
+.footer-contact h3 {
+    margin-bottom: 1.5rem;
+
+    color: #c9a45c;
+
+    font-size: 0.75rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+}
+
+.footer-navigation a,
+.footer-contact a {
+    margin-bottom: 0.8rem;
+
+    color: #c8c3b9;
+
+    text-decoration: none;
+
+    font-size: 0.9rem;
+
+    transition: color 0.3s ease;
+}
+
+.footer-navigation a:hover,
+.footer-contact a:hover {
+    color: #c9a45c;
+}
+
+
+/* =========================
+   FOOTER BOTTOM
+========================= */
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 2rem;
+
+    border-top: 1px solid rgba(242, 238, 229, 0.1);
+}
+
+.footer-bottom p {
+    color: #6f6b64;
+
+    font-size: 0.75rem;
+}
+
+.footer-legal {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-legal a {
+    color: #6f6b64;
+
+    text-decoration: none;
+
+    font-size: 0.75rem;
+
+    transition: color 0.3s ease;
+}
+
+.footer-legal a:hover {
+    color: #c9a45c;
+}
+
+
+/* =========================
+   MOBILE MENU BUTTON
+========================= */
+
+.menu-toggle {
+    display: none;
+
+    width: 50px;
+    height: 50px;
+
+    padding: 0;
+
+    border: 1px solid rgba(242, 238, 229, 0.3);
+    background: transparent;
+
+    cursor: pointer;
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+.menu-toggle span {
+    width: 24px;
+    height: 1px;
+
+    background-color: #f2eee5;
+
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    nav {
+        padding: 1.2rem 1.5rem;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+} 
+
+@media (max-width: 768px) {
+
+    .nav-links.active {
+        display: flex;
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+
+        flex-direction: column;
+        gap: 0;
+
+        padding: 1rem 1.5rem 1.5rem;
+
+        background-color: rgba(11, 11, 10, 0.97);
+        border-top: 1px solid rgba(242, 238, 229, 0.1);
+    }
+
+    .nav-links.active a {
+        padding: 1rem 0;
+
+        border-bottom: 1px solid rgba(242, 238, 229, 0.1);
+    }
+
+    .nav-links.active a:last-child {
+        border-bottom: none;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .menu-toggle.active span:nth-child(1) {
+        transform: translateY(6px) rotate(45deg);
+    }
+
+    .menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active span:nth-child(3) {
+        transform: translateY(-6px) rotate(-45deg);
+    }
+
+}
+
+/* =========================
+   EVENTS — RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    #events {
+        padding: 6rem 2rem;
+    }
+
+    .section-header {
+        margin-bottom: 4rem;
+    }
+
+    .events-grid {
+        gap: 1.5rem;
+    }
+
+    .event-card {
+        min-height: 340px;
+        padding: 2.5rem;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    #events {
+        padding: 5rem 1.5rem;
+    }
+
+    .section-header {
+        margin-bottom: 3rem;
+    }
+
+    .section-intro {
+        font-size: 1rem;
+    }
+
+    .events-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .event-card {
+        min-height: 320px;
+        padding: 2rem 1.5rem;
+    }
+
+    .event-card h3 {
+        font-size: 2rem;
+    }
+
+    .event-card p {
+        font-size: 0.95rem;
+    }
+
+    .event-link {
+        margin-top: 2rem;
+    }
+
+}
+
+/* =========================
+   LIVE BBQ — RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    #live-bbq {
+        padding: 6rem 2rem;
+    }
+
+    .live-bbq-intro {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .live-bbq-text {
+        max-width: 700px;
+    }
+
+    .live-bbq-images {
+        min-height: 550px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    #live-bbq {
+        padding: 5rem 1.5rem;
+    }
+
+    .live-bbq-intro {
+        gap: 3rem;
+    }
+
+    .live-bbq-text h2 {
+        font-size: clamp(2.8rem, 12vw, 4rem);
+    }
+
+    .live-bbq-description {
+        font-size: 1rem;
+    }
+
+    .live-bbq-images {
+        min-height: 400px;
+    }
+
+    .main-image {
+        width: 82%;
+        height: 330px;
+    }
+
+    .secondary-image {
+        width: 48%;
+        height: 200px;
+        border-width: 6px;
+    }
+
+}
+
+/* =========================
+   PROCESS — RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .process-header {
+        margin: 6rem auto 4rem;
+    }
+
+    .process-steps {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 4rem;
+    }
+
+    .process-steps::before {
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .process-header {
+        margin: 5rem auto 3rem;
+    }
+
+    .process-header h2 {
+        font-size: 2.2rem;
+    }
+
+    .process-steps {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .process-step {
+        padding: 0;
+    }
+
+    .process-number {
+        margin-bottom: 1.5rem;
+    }
+
+    .process-step p {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+}
+
+/* =========================
+   BBQ BUFFET — RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    #bbq-buffet {
+        padding: 6rem 2rem;
+    }
+
+    .bbq-buffet-intro {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .bbq-buffet-images {
+        min-height: 550px;
+    }
+
+    .bbq-buffet-text {
+        max-width: 700px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    #bbq-buffet {
+        padding: 5rem 1.5rem;
+    }
+
+    .bbq-buffet-intro {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .bbq-buffet-images {
+        min-height: 400px;
+    }
+
+    .bbq-buffet-image.main-image {
+        width: 82%;
+        height: 330px;
+    }
+
+    .bbq-buffet-image.secondary-image {
+        width: 48%;
+        height: 200px;
+        border-width: 6px;
+    }
+
+    .bbq-buffet-text {
+        max-width: 700px;
+    }
+
+    .bbq-buffet-text h2 {
+        font-size: clamp(2.8rem, 12vw, 4rem);
+    }
+
+    .bbq-buffet-description {
+        font-size: 1rem;
+    }
+
+}
+
+/* =========================
+   BBQ BUFFET CTA — RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .bbq-buffet-cta {
+        margin-top: 5rem;
+        padding-top: 3.5rem;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .bbq-buffet-cta {
+        margin-top: 4rem;
+        padding-top: 3rem;
+    }
+
+    .bbq-buffet-cta h2 {
+        font-size: 2.5rem;
+    }
+
+    .bbq-buffet-cta p:not(.section-eyebrow) {
+        font-size: 0.95rem;
+    }
+
+    .bbq-buffet-cta .cta-button {
+        width: 100%;
+        justify-content: center;
+        padding: 1rem 1.5rem;
+    }
+
+}
+
+/* =========================
+   ABOUT — RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    #about {
+        padding: 7rem 2rem;
+    }
+
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .about-image {
+        height: 550px;
+    }
+
+    .about-content {
+        max-width: 700px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    #about {
+        padding: 5rem 1.5rem;
+    }
+
+    .about-container {
+        gap: 3rem;
+    }
+
+    .about-image {
+        height: 400px;
+    }
+
+    .about-content h2 {
+        font-size: clamp(2.8rem, 12vw, 4rem);
+        margin-bottom: 2rem;
+    }
+
+    .about-text p {
+        font-size: 1rem;
+        line-height: 1.75;
+    }
+
+}
+
+/* =========================
+   FAQ — RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    #faq {
+        padding: 7rem 2rem;
+    }
+
+    .faq-header {
+        margin-bottom: 4rem;
+    }
+
+    .faq-item summary {
+        gap: 1.5rem;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    #faq {
+        padding: 5rem 1.5rem;
+    }
+
+    .faq-header {
+        margin-bottom: 3rem;
+    }
+
+    .faq-header h2 {
+        font-size: 2.5rem;
+    }
+
+    .faq-header > p:last-child {
+        font-size: 1rem;
+    }
+
+    .faq-item summary {
+        padding: 1.5rem 0;
+        gap: 1rem;
+        font-size: 1rem;
+    }
+
+    .faq-item summary span {
+        font-size: 1.4rem;
+    }
+
+    .faq-item p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+}
+
+/* =========================
+   CONTACT — RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    #contact {
+        padding: 7rem 2rem;
+    }
+
+    .contact-header {
+        margin-bottom: 4rem;
+    }
+
+    .contact-options {
+        max-width: 700px;
+        grid-template-columns: 1fr;
+        margin-bottom: 7rem;
+    }
+
+    .contact-option + .contact-option {
+        border-left: none;
+        border-top: 1px solid rgba(11, 11, 10, 0.15);
+    }
+
+    .locations-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    #contact {
+        padding: 5rem 1.5rem;
+    }
+
+    .contact-header {
+        margin-bottom: 3rem;
+    }
+
+    .contact-header h2 {
+        font-size: 2.5rem;
+    }
+
+    .contact-header > p:last-child {
+        font-size: 1rem;
+    }
+
+    .contact-options {
+        margin-bottom: 5rem;
+    }
+
+    .contact-option {
+        padding: 1.5rem;
+    }
+
+    .contact-value {
+        font-size: 0.85rem;
+    }
+
+    .locations-header {
+        margin-bottom: 3rem;
+    }
+
+    .locations-header h2 {
+        font-size: 2.3rem;
+    }
+
+    .location-image {
+        height: 250px;
+    }
+
+    .location-content {
+        padding: 2rem 1.5rem;
+    }
+
+    .location-content h3 {
+        font-size: 2rem;
+    }
+
+    .location-address {
+        margin-bottom: 2rem;
+    }
+
+    .location-link {
+        margin-top: 2rem;
+    }
+
+}
+
+/* =========================
+   FOOTER — RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    footer {
+        padding: 4rem 2rem 2rem;
+    }
+
+    .footer-main {
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        padding-bottom: 4rem;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+        max-width: 500px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    footer {
+        padding: 4rem 1.5rem 1.5rem;
+    }
+
+    .footer-main {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .footer-brand {
+        grid-column: auto;
+    }
+
+    .footer-brand p {
+        font-size: 0.9rem;
+    }
+
+    .footer-bottom {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .footer-legal {
+        gap: 1.5rem;
+    }
+
+}
+
+/* ========================================
+   LEGAL PAGES
+======================================== */
+
+.legal-page {
+    padding: 10rem 4rem 8rem;
+    background-color: #f2eee5;
+    color: #0b0b0a;
+}
+
+.legal-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.legal-header {
+    max-width: 700px;
+    margin: 0 auto 5rem;
+    text-align: center;
+}
+
+.legal-header .section-eyebrow {
+    margin-bottom: 1rem;
+}
+
+.legal-header h1 {
+    font-size: clamp(3rem, 6vw, 5rem);
+    line-height: 0.95;
+}
+
+.legal-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.legal-content section {
+    margin-bottom: 4rem;
+}
+
+.legal-content section:last-child {
+    margin-bottom: 0;
+}
+
+.legal-content h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.legal-content p {
+    margin-bottom: 1.25rem;
+    color: #4a4843;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.legal-content p:last-child {
+    margin-bottom: 0;
+}
+
+.legal-content a {
+    color: #a8843f;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.legal-content a:hover {
+    color: #0b0b0a;
+}
+
+.legal-address {
+    margin-bottom: 2rem;
+}
+
+.legal-contact {
+    padding-top: 2rem;
+    border-top: 1px solid rgba(11, 11, 10, 0.15);
+}
+
+.legal-contact p {
+    margin-bottom: 0.5rem;
+}
+
+.legal-contact strong {
+    color: #0b0b0a;
+}
+
+
+/* ========================================
+   LEGAL PAGES - RESPONSIVE
+======================================== */
+
+@media (max-width: 900px) {
+
+    .legal-page {
+        padding: 9rem 2rem 6rem;
+    }
+
+    .legal-header {
+        margin-bottom: 4rem;
+    }
+
+    .legal-content {
+        max-width: 700px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .legal-page {
+        padding: 8rem 1.5rem 5rem;
+    }
+
+    .legal-header {
+        margin-bottom: 3rem;
+    }
+
+    .legal-header h1 {
+        font-size: 3rem;
+    }
+
+    .legal-content section {
+        margin-bottom: 3rem;
+    }
+
+    .legal-content h2 {
+        font-size: 1.3rem;
+    }
+
+    .legal-content p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+}
+
+/* ========================================
+   LEGAL PAGES
+======================================== */
+
+.legal-page {
+    padding: 10rem 4rem 8rem;
+    background-color: #f2eee5;
+    color: #0b0b0a;
+}
+
+.legal-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.legal-header {
+    max-width: 700px;
+    margin: 0 auto 5rem;
+    text-align: center;
+}
+
+.legal-header .section-eyebrow {
+    margin-bottom: 1rem;
+}
+
+.legal-header h1 {
+    font-size: clamp(3rem, 6vw, 5rem);
+    line-height: 0.95;
+}
+
+.legal-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.legal-content section {
+    margin-bottom: 4rem;
+}
+
+.legal-content section:last-child {
+    margin-bottom: 0;
+}
+
+.legal-content h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.legal-content p {
+    margin-bottom: 1.25rem;
+    color: #4a4843;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.legal-content p:last-child {
+    margin-bottom: 0;
+}
+
+.legal-content strong {
+    color: #0b0b0a;
+}
+
+.legal-content a {
+    color: #a8843f;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.legal-content a:hover {
+    color: #0b0b0a;
+}
+
+
+/* ========================================
+   LEGAL PAGES - RESPONSIVE
+======================================== */
+
+@media (max-width: 900px) {
+
+    .legal-page {
+        padding: 9rem 2rem 6rem;
+    }
+
+    .legal-header {
+        margin-bottom: 4rem;
+    }
+
+    .legal-content {
+        max-width: 700px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .legal-page {
+        padding: 8rem 1.5rem 5rem;
+    }
+
+    .legal-header {
+        margin-bottom: 3rem;
+    }
+
+    .legal-header h1 {
+        font-size: 3rem;
+    }
+
+    .legal-content section {
+        margin-bottom: 3rem;
+    }
+
+    .legal-content h2 {
+        font-size: 1.3rem;
+    }
+
+    .legal-content p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+}
+
+
+
